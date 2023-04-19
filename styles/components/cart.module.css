@@ -1,0 +1,14 @@
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+.cart__check_product {
+    width: 19px;
+    height: 19px;
+    outline: thin solid var(--az-body-color);
+    outline-offset: 2px;
+    border-radius: 1px;
+}
+.cart__input_check:checked + .cart__check_product {
+    background: var(--az-primary-brand);
+}

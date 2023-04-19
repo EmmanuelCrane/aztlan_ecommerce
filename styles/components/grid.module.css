@@ -1,0 +1,51 @@
+.rowCards {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: none;
+}
+
+.rowCategoryCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    padding: 2rem;
+    padding-top: none;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* height: 100vh; */
+    /* background: green; */
+}
+
+@media (min-width: 576px) {
+    .rowCards {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 0.5rem; */
+    }
+}
+
+@media (min-width: 768px) {
+    .rowCards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 0.5rem;
+    }
+    .rowCategoryCards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .rowCards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

@@ -1,0 +1,102 @@
+.form {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+.form_line {
+    width: 100%;
+    order: 1;
+}
+
+.form_line__content {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.form_line__content > button {
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.form_line__content > input {
+    padding: 0.25rem 2rem;
+    border-radius: 5px 0 0 5px;
+}
+.form__content {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.form__content__control,
+.form__content__select_control {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    font-size: 1.6rem;
+    text-indent: 1rem;
+    background: transparent;
+    border: thin solid var(--az-body-color);
+    border-radius: 0.5rem;
+    color: var(--az-dark-bg-subtle);
+}
+
+.form__content__select_control {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+        linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.form__content__select_control:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+
+.form__content__control::placeholder {
+    color: var(--az-body-color);
+}
+.form__content__label_float {
+    width: 100%;
+    height: 60px;
+    padding-top: 2rem;
+    position: relative;
+}
+.form__label_float {
+    position: absolute;
+    left: 1rem;
+    transform: translateY(75%);
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    transition: 1s;
+}
+.form__label_float___focus {
+    transform: translateY(-100%);
+}
+.form__label_radio {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+@media(min-width:600px) {
+    .form_line {
+        width: 50%;
+        order: 0;
+    }
+}

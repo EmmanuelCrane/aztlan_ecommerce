@@ -1,0 +1,84 @@
+/* globales */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+/* tamanios */
+.btn_sm {
+    font-size: 1.4rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.btn_lg {
+    padding: 0.8rem 1.6rem;
+    font-size: 2rem;
+}
+/* colores */
+.btn_dark {
+    background: var(--az-dark) !important;
+    color: var(--az-light-text) !important;
+    border: thin solid var(--az-dark-border-subtle) !important;
+}
+.btn_brand {
+    background: var(--az-primary-brand) !important;
+    color: var(--az-light-text) !important;
+    border: thin solid var(--az-dark-border-subtle) !important;
+}
+.btn_primary {
+    background: var(--az-primary) !important;
+    color: var(--az-primary-text) !important;
+    border: thin solid var(--az-primary-border-subtle) !important;
+}
+.btn_warning {
+    background: var(--az-warning) !important;
+    color: var(--az-warning-text) !important;
+    border: thin solid var(--az-warning-border-subtle) !important;
+}
+.btn_danger {
+    background: var(--az-danger) !important;
+    color: var(--az-danger-text) !important;
+    border: thin solid var(--az-danger-border-subtle) !important;
+}
+/* links */
+.btn_link_primary {
+    background: transparent !important;
+    color: var(--az-primary-text) !important;
+    border: none !important;
+}
+
+.btn_link_danger {
+    background: transparent !important;
+    color: var(--az-danger-text) !important;
+    border: none !important;
+}
+.btn_link_dark {
+    background: transparent !important;
+    color: var(--az-dark) !important;
+    border: none !important;
+}
+/* bordes */
+.btn_border_secondary {
+    background: transparent !important;
+    color: var(--az-secondary) !important;
+    border: thin solid var(--az-secondary-border-subtle) !important;
+}
+.btn_border_primary {
+    background: transparent !important;
+    color: var(--az-primary-text) !important;
+    border: thin solid var(--az-primary-border-subtle) !important;
+}
+/* grupos */
+.btn_group_full {
+    width: 100%;
+    padding: 2rem 0;
+}
+.btn_group_full > button {
+    width: 100%;
+    margin-bottom: 1rem;
+}

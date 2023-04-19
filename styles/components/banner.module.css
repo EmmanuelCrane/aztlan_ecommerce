@@ -1,0 +1,42 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+}
+.banner__carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: hidden;
+}
+.banner__carousel__image {
+    flex: 1 0 100%;
+    height: 100%;
+}
+
+.banner__btn__left, .banner__btn__right {
+    position: absolute;
+    height: calc(100% - 3rem);
+    padding: 0 1rem;
+    border: none;
+    font-size: 5rem;
+    background: transparent;
+    color: var(--az-dark);
+    box-shadow: 0 0 0 0 var(--az-light);
+}
+.banner__btn__left {
+    left: 1px;
+    filter: drop-shadow(2px 0 0 var(--az-light));
+    border-left: none;
+}
+.banner__btn__right {
+    right: 1px;
+    filter: drop-shadow(-2px 0 0 var(--az-light));
+    border-right: none;
+}
+.banner__btn__left:hover, .banner__btn__right:hover {
+    border: 2px solid var(--az-primary-brand);
+    border-radius: 5px;
+}
